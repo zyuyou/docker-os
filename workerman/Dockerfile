@@ -18,4 +18,4 @@ RUN echo 'root:123456' | chpasswd
 
 EXPOSE 80 81 82 22 21 8080 8001 8002 8003 8004 8005 8006 8007 8008 8009 8010
 
-ENTRYPOINT ["/etc/init.d/ssh", "start"]
+ENTRYPOINT ["/bin/bash", "-l", "&&", "/etc/init.d/ssh", "start"]
