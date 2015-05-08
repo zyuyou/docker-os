@@ -20,6 +20,8 @@ RUN ln -s /etc/php5/mods-available/inotify.ini /etc/php5/cli/conf.d/20-inotify.i
 
 RUN cd /tmp && git clone https://github.com/phpredis/phpredis.git
 RUN cd /tmp/phpredis && phpize && ./configure --enable-redis-igbinary && make && make install
+RUN echo extension=redis.so > /etc/php5/mods-available/redis.ini
+RUN ln -s /etc/php5/mods-available/redis.ini /etc/php5/cli/conf.d/20-redis.ini
 
 RUN cd /tmp && git clone https://github.com/zyuyou/php-protobuf.git
 RUN cd /tmp/php-protobuf && phpize && ./configure && make && make install
