@@ -1,6 +1,9 @@
+# Modified
+- use ubuntu:15.04
+- use "{{range .Mounts}}" instead of "{{range .Volumes}}" for lookup container's volumes
+- delete some invalid code
 
-
-# Samba Docker volume sharing plugin
+## Samba Docker volume sharing plugin
 
 Sharing a Docker container's volume should be as simple as `docker run svendowideit/samba <container>`.
 
