@@ -3,6 +3,9 @@
 - use "{{range .Mounts}}" instead of "{{range .Volumes}}" for lookup container's volumes
 - delete some invalid code
 
+## Source project
+[svendowideit/samba](https://github.com/SvenDowideit/dockerfiles/tree/master/samba)
+
 ## Samba Docker volume sharing plugin
 
 Sharing a Docker container's volume should be as simple as `docker run svendowideit/samba <container>`.
