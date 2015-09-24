@@ -1,10 +1,7 @@
-# Modified
+# Modified from [svendowideit/samba](https://github.com/SvenDowideit/dockerfiles/tree/master/samba)
 - use ubuntu:15.04
 - use "{{range .Mounts}}" instead of "{{range .Volumes}}" for lookup container's volumes
 - delete some invalid code
-
-## Source project
-[svendowideit/samba](https://github.com/SvenDowideit/dockerfiles/tree/master/samba)
 
 ## Samba Docker volume sharing plugin
 
